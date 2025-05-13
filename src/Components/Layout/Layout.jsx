@@ -12,7 +12,7 @@ export default function Layout() {
       <div className="fixed top-0 left-0 z-50 w-28 h-screen transition-transform-translate-x-full sm:translate-x-0 bg-[var(--main-black)]">
         <SideBar />
       </div>
-      <main className="ml-[112px] mt-18 px-8 min-h-[70vh]">
+      <main className="ml-[112px] mt-18 px-8 pb-10 min-h-[70vh]">
         <Outlet />
       </main>
     </>

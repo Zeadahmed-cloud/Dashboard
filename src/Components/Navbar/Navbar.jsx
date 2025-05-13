@@ -8,7 +8,7 @@ export default function Navbar() {
         <input
           type="search"
           placeholder="Search for reports, equipments"
-          className="w-full sm:w-64 md:w-96 px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 transition-all duration-200"
+          className="w-full sm:w-64 md:w-96 px-4 py-2 rounded-lg bg-[#26282A] text-white focus:outline-none focus:ring-2 transition-all duration-200"
         />
 
         <Link

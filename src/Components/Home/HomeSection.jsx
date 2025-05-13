@@ -25,8 +25,8 @@ export default function HomeSection() {
   ];
 
   return (
-    <div className="min-h-[70vh] py-7 px-4 sm:px-6 md:px-10">
-      <div className="max-w-6xl mx-auto flex flex-col">
+    <div className="min-h-[70vh] py-7 ">
+      <div className=" flex flex-col">
         <div className="flex flex-col gap-2 mb-6 mt-16 sm:mt-0">
           <h1 className="text-white text-2xl sm:text-3xl font-bold leading-snug">
             Dashboard Overview
@@ -69,25 +69,29 @@ export default function HomeSection() {
           </h1>
           <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
             <div className="relative w-full sm:w-[250px]">
-              <input
-                type="text"
-                value="All Categories"
-                readOnly
-                className="bg-[#1D1F20] w-full h-10 text-white rounded-lg px-3 pr-10 text-sm outline-none"
-              />
-              <div className="absolute right-3 top-1/2 transform -translate-y-1/2">
+              <select
+                className="bg-[#1D1F20] w-full h-10 text-white rounded-lg px-3 pr-10 text-sm outline-none appearance-none"
+                defaultValue="all"
+              >
+                <option value="All">All Categories</option>
+                <option value="equipment">Equipment</option>
+                <option value="inventory">Inventory</option>
+              </select>
+              <div className=" absolute right-3 top-1/2 transform -translate-y-1/2">
                 <img src={logo2} className="size-5" />
               </div>
             </div>
 
             <div className="relative w-full sm:w-[250px]">
-              <input
-                type="text"
-                value="Last 7 days"
-                readOnly
-                className="bg-[#1D1F20] w-full h-10 text-white rounded-lg px-3 pr-10 text-sm outline-none"
-              />
-              <div className="absolute right-3 top-1/2 transform -translate-y-1/2">
+              <select
+                className="bg-[#1D1F20] w-full h-10 text-white rounded-lg px-3 pr-10 text-sm outline-none appearance-none"
+                defaultValue="7"
+              >
+                <option value="7">Last 7 days</option>
+                <option value="30">Last 30 days</option>
+                <option value="custom">Custom Range</option>
+              </select>
+              <div className="pointer-events-none absolute right-3 top-1/2 transform -translate-y-1/2">
                 <img src={logo2} className="size-5" />
               </div>
             </div>
